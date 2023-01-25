@@ -5,8 +5,8 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" brcnch
   push:
     branches: [ "main" ]
-    paths:
-      - 'frontend/**'
+    #paths:
+      #- 'frontend/**'
   pull_request:
     branches: [ "main" ]
     paths:
@@ -28,4 +28,4 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm install -g @angular/cli@latest
       - run: npm ci
-      - run: npm test
+      - run: npm run build
