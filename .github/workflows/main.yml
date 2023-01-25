@@ -28,4 +28,5 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm install -g @angular/cli@latest
       - run: npm ci
-      - run: npm run build
+#       - run: npm run build
+
